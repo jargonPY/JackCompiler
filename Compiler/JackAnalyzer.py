@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Wed May 27 12:29:12 2020
-
-@author: elipalchik
-"""
 
 import os
 from compiler import CompilationEngine
@@ -58,9 +53,3 @@ class JackAnalyzer():
             file = self.path
             CompilationEngine(file, self.functions)
             
-# x = JackAnalyzer("/Users/elipalchik/Desktop/nand2tetris/projects/11/Seven")
-# x = JackAnalyzer("/Users/elipalchik/Desktop/nand2tetris/projects/11/ConvertToBin")
-# x = JackAnalyzer("/Users/elipalchik/Desktop/nand2tetris/projects/11/Square")
-# x = JackAnalyzer("/Users/elipalchik/Desktop/nand2tetris/projects/11/Average")
-# x = JackAnalyzer("/Users/elipalchik/Desktop/nand2tetris/projects/11/Pong")
-# x = JackAnalyzer("/Users/elipalchik/Desktop/nand2tetris/projects/11/ComplexArrays")
