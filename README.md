@@ -14,7 +14,7 @@ Instructions:
   2. Open the cloned directory in the terminal
   3. Run `python main.py ~/directory of the .jack file to compile`
   
-The Compiler, VMtranslator and assembler can also be run individually:
+The compiler, vmtranslator and assembler can also be run individually:
   - To run the compiler:
       `python ./JackAnalyzer.py`
   - To run VM translator:
