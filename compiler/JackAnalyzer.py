@@ -52,4 +52,7 @@ class JackAnalyzer():
         else:
             file = self.path
             CompilationEngine(file, self.functions)
-            
+
+if __name__ == "__main__":
+    path = input("Enter file or directory to compile: ")
+    JackAnalyzer(path)

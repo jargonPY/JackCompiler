@@ -6,15 +6,20 @@ from vm.vmtranslator import VMTranslator
 from assembler.assembler import Assemble
 
 if __name__ == "__main__":
-    path = sys.argv[1]
-
-    if os.path.isdir(path):
-        for file in os.listdir(path):
-            if ".jack" in file:
-                JackAnalyzer(path + "/" + file)
-                VMTranslator(path + "/" + file.replace(".jack", ".vm"))
-                Assemble(path + "/" + file.replace(".jack", ".asm"))
+    if (len(sys.argv) <= 1):
+        print("Please provide a file/directory path")
+    elif (len(sys.argv) > 2):
+        print("Too many arguments")
     else:
-        JackAnalyzer(path)
-        VMTranslator(path.replace(".jack", ".vm"))
-        Assemble(path.replace(".jack", ".asm"))
+        path = sys.argv[1]
+
+        if os.path.isdir(path):
+            for file in os.listdir(path):
+                if ".jack" in file:
+                    JackAnalyzer(path + "/" + file)
+                    VMTranslator(path + "/" + file.replace(".jack", ".vm"))
+                    Assemble(path + "/" + file.replace(".jack", ".asm"))
+        else:
+            JackAnalyzer(path)
+            VMTranslator(path.replace(".jack", ".vm"))
+            Assemble(path.replace(".jack", ".asm"))
