@@ -1,7 +1,7 @@
 # JackCompiler
 
 Implementation of the Jack programming language. Jack is a Java like OOP language that was designed for the computer architecture course
-at www.nand2tetris.org.
+at www.nand2tetris.org. To see the result of compiling a Jack program check the example folder.
 
 The implementation includes:
   - The assembler for the hack computer (assembler designed for the specific instruction set of the hack computer)
@@ -9,7 +9,7 @@ The implementation includes:
     "write once run anywhere" paradigm
   - The compiler for the Jack language, compiles to the virtual machine
 
-Instructions, run the following commands from the terminal:
+Instructions:
   1. Clone directory
   2. Open the cloned directory in the terminal
   3. Run `python main.py ~/directory of the .jack file to compile`
