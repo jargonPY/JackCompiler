@@ -10,11 +10,16 @@ The implementation includes:
   - The compiler for the Jack language, compiles to the virtual machine
 
 Instructions, run the following commands from the terminal:
+  1. Clone directory
+  2. Open the cloned directory in the terminal
+  3. Run `python main.py ~/directory of the .jack file to compile`
+  
+The Compiler, VMtranslator and assembler can also be run individually:
   - To run the compiler:
-      python JackAnalyzer.py
+      `python ./JackAnalyzer.py`
   - To run VM translator:
-      python vmtranslator.py
+      `python ./vmtranslator.py`
   - To run assembler:
-      python assembler.py
+      `python ./assembler.py`
 
   - In all cases you will be prompted to enter a path to the file that you'd like to translate. Once the path is provided the program will       automatically translate and save the file in the same directory. If a Jack program comprising of multiple files needs to be           compiled you can provide the directory path, the program will parse each file automatically.
