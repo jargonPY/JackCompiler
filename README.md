@@ -16,10 +16,10 @@ Instructions:
   
 The compiler, vmtranslator and assembler can also be run individually:
   - To run the compiler:
-      `python ./JackAnalyzer.py`
+      `python ./compiler/JackAnalyzer.py`
   - To run VM translator:
-      `python ./vmtranslator.py`
+      `python ./vm/vmtranslator.py`
   - To run assembler:
-      `python ./assembler.py`
+      `python ./assembler/assembler.py`
 
   - In all cases you will be prompted to enter a path to the file that you'd like to translate. Once the path is provided the program will       automatically translate and save the file in the same directory. If a Jack program comprising of multiple files needs to be           compiled you can provide the directory path, the program will parse each file automatically.
