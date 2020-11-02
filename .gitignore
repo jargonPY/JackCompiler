@@ -1,2 +1,8 @@
 .DS_Store
 __pycache__
+compiler/__init__.pyc
+assembler/__init__.pyc
+vm/__init__.pyc
+vm/tempCodeRunnerFile.py
+compiler.code-workspace
+
